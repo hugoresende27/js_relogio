@@ -7,8 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 :root
 {
-   --border-cor:#144f6c;
-   --fill-color:#6ab3f8;
+   --primary-cor:#000;
+   --secondary-cor:#fff;
+}
+
+html.dark {
+    --primary-cor: #fff;
+    --secondary-cor:#333;
+}
+html.dark {
+    background-color: #fff;
+    color: var(--primary-cor);
 }
 
 * 
@@ -21,14 +30,14 @@
 
 body
 {
-    background-image: linear-gradient(90deg, #6273c0, #2b88f0);
-    font-family: 'MuseoModerno',sans-serif;
+    /* background-image: linear-gradient(90deg, #6273c0, #2b88f0); */
+    font-family: 'Inconsolata',sans-serif;
     font-weight: 900;
     display: flex;          /*coloca tudo em linha*/
     flex-direction: column; /*coloca tudo em coluna*/
     align-items: center;    /*alinha horizontalmente*/
-    /*justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
-    /*height: 100vh;
+    justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+    height: 100vh;
     overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
     /*margin: 0;
     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
